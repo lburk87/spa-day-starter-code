@@ -24,3 +24,27 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+.square {
+    margin: auto;
+    width: 50%;
+    height: 2%;
+    text-align: center;
+    text: white
+}
+
+#red {
+   background-color: crimson;
+}
+
+#green {
+    background-color: lightGreen;
+}
+
+#orange {
+    background-color: coral;
+}
+
+#purple {
+    background-color: darkMagenta;
+}
