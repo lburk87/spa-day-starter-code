@@ -1,26 +1,34 @@
 package org.launchcode.spaday.models;
 
-import javax.validation.constraints.Email;
-
 public class User {
-
-    private static String username;
-    private Email email;
+    private String username;
+    private String email;
     private String password;
 
-    public static String getUsername() {
+    public User() {
+
+    }
+
+    public User(String username, String email, String password) {
+        this();
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+
+    public String getUsername() {
         return username;
     }
 
-    public static void setUsername(String username) {
-        User.username = username;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public Email getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Email email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
