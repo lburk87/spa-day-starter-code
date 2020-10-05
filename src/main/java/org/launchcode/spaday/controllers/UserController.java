@@ -20,10 +20,7 @@ public class UserController {
 
     @PostMapping
     public String processAddUserForm(Model model, @ModelAttribute @Valid User user, Errors errors, String verify) {
-//        model.addAttribute("user", user);
-//        model.addAttribute("verify", verify);
-//        model.addAttribute("username", user.getUsername());
-//        model.addAttribute("email", user.getEmail());
+
         if (errors.hasErrors()){
             return "user/add";
         }
